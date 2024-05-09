@@ -1,16 +1,23 @@
 # --About projects--
 ---> in this project i learned about and  Api and json Data. i used kotlin language as a backed->
 # Total Activity used
- ---> i used 3 activity for creating a good projects and currently working on-----
+ ---> i used 2 activity for creating the project 
+ 1) Splash Activity
+ 2) Main Activity
+   and currently working on new other apps-----
 
  # ---Weather App---
- ---> i used data from weatherApp websites.
+ ---> i used to fatch the data from openweathermap APi .
  
  # --Splash Screen image--
-<img src="https://github.com/kumarpankajkumar123/WeatherApp/assets/119131154/97b0862c-04f9-43c1-b6ad-465909d6c27c"  width="200" height="400" />
+<img src="https://github.com/jatinJK007/Weather_APP/assets/147340304/dff202a6-6f2a-48b2-982d-1232696a1ed2"  width="200" height="400" />
+
 
 # ---See temprature of the city ---
-<img src="https://github.com/kumarpankajkumar123/WeatherApp/assets/119131154/4f2f3a08-b9bf-43ed-9311-905a73cce77e"  width="200" height="400" />
+<img src="https://github.com/jatinJK007/Weather_APP/assets/147340304/4fd1b169-72a7-4278-86de-1e35186e5973"  width="200" height="400" />
+
+<img src="https://github.com/jatinJK007/Weather_APP/assets/147340304/a2b21125-5940-4cfe-90ab-fb7d857098fc"   width="200" height="400" />
+
 
 ---> in this Activity the data arrive from weather server and show in this activity. different containers contain different condition of weather like <"weather condition"> <"humidity">,<"Wind speed"> etc.
 
