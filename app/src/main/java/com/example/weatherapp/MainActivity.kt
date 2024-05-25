@@ -1,12 +1,17 @@
 package com.example.weatherapp
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.SearchView
 import android.widget.TextView
+import android.widget.Toast
 import com.example.weatherapp.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -21,6 +26,9 @@ import java.util.Locale
 // 398c243611f424520683f6475b50ab24
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
+
+//    made by jk
 
     private val binding : ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
@@ -29,6 +37,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         fetchWeatherData("jaipur")
+
+
+        auth = Firebase.auth
+
+
+        binding.logout.setOnClickListener{
+            auth.signOut()
+            val intent = Intent(this,SignUpActivity::class.java)
+            startActivity(intent)
+            finish()
+//            val text = "Hello toast!"
+//            val duration = Toast.LENGTH_SHORT
+//
+//            val toast = Toast.makeText(this, text, duration) // in Activity
+//            toast.show()
+        }
 
         searchCity()
     }
