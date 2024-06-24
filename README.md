@@ -1,7 +1,7 @@
 # --About projects--
 ---> in this project i learned about and  Api and json Data. i used kotlin language as a backend->
 # Total Activity used
- ---> i used 2 activity for creating the project 
+ ---> i used 4 activity for creating the project 
  1) Splash Activity
  2) Main Activity
  3) login activity
